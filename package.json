@@ -1,7 +1,7 @@
 {
   "name": "milliseconds",
   "description": "Insanely lightweight module for converting times to milliseconds.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Henrik Joreteg",
   "bugs": {
     "url": "https://github.com/henrikjoreteg/milliseconds/issues"
