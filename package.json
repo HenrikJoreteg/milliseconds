@@ -1,0 +1,24 @@
+{
+  "name": "milliseconds",
+  "description": "Insanely lightweight module for converting times to milliseconds.",
+  "version": "0.0.0",
+  "author": "Henrik Joreteg",
+  "bugs": {
+    "url": "https://github.com/henrikjoreteg/milliseconds/issues"
+  },
+  "homepage": "https://github.com/henrikjoreteg/milliseconds",
+  "keywords": [
+    "time",
+    "conversion",
+    "milliseconds"
+  ],
+  "license": "MIT",
+  "main": "milliseconds.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/henrikjoreteg/milliseconds"
+  },
+  "scripts": {
+    "test": "node test.js"
+  }
+}
