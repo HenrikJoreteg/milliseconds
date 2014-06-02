@@ -1,11 +1,14 @@
-var round = Math.round;
-
+var rounder = function(m) {
+    return function(n) {
+        return Math.round(n * m);
+    }
+};
 module.exports = {
-    seconds: function (n) { return round(n * 1000) },
-    minutes: function (n) { return round(n * 60000) },
-    hours: function (n) { return round(n * 3600000) },
-    days: function (n) { return round(n * 86400000) },
-    weeks: function (n) { return round(n * 604800000) },
-    months: function (n) { return round(n * 2629800000) },
-    years: function (n) { return round(n * 31557600000) }
+    seconds: rounder(1000),
+    minutes: rounder(60000),
+    hours: rounder(3600000),
+    days: rounder(86400000),
+    weeks: rounder(604800000),
+    months: rounder(2629800000),
+    years: rounder(31557600000)
 };
