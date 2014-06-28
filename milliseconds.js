@@ -1,12 +1,11 @@
-function calc(m) {
-    return function(n) { return Math.round(n * m); };
-};
-module.exports = {
-    seconds: calc(1e3),
-    minutes: calc(6e4),
-    hours: calc(36e5),
-    days: calc(864e5),
-    weeks: calc(6048e5),
-    months: calc(26298e5),
-    years: calc(315576e5)
-};
+function is(milliseconds) {
+    return function(n) { return Math.round(n * milliseconds); };
+}
+var ms = module.exports;
+ms.seconds = is(1000);
+ms.minutes = is(ms.seconds(60));
+ms.hours   = is(ms.minutes(60));
+ms.days    = is(ms.hours(24));
+ms.weeks   = is(ms.days(7));
+ms.years   = is(ms.days(365.25));
+ms.months  = is(ms.years(1 / 12));

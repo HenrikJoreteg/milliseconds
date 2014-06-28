@@ -2,9 +2,9 @@
 
 Insanely lightweight module for converting times to milliseconds.
 
-Literally 9 lines of code, it's just to make writing time in a way that's more readable without having to remember how many milliseconds are in a day, week, month, year.
+Literally 11 lines of code, it's just to make writing time in a way that's more readable without having to remember how many milliseconds are in a day, week, month, year.
 
-For those curious, the exact definition of "years" and "months" can vary slighly but these are based on the Julian Year which is 365.25 days of 86400 seconds (http://en.wikipedia.org/wiki/Year) and a month is simply 1/12th of that. 
+For those curious, the exact definition of "years" and "months" can vary slightly but these are based on the Julian Year which is 365.25 days of 86400 seconds (http://en.wikipedia.org/wiki/Year) and a month is simply 1/12th of that. 
 
 ## install
 
